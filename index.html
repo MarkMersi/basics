@@ -11,9 +11,13 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
         line-height: 1.8em;
-        text-align: left;
         margin: auto;
-        width: 24.5em;
+        width: 32.5em;
+    }
+
+    #centro {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     h2 {
@@ -28,6 +32,15 @@
     a:visited {
         color: darkviolet
     }
+
+    .spiderman, .mj {
+        display: flex;
+        padding-left: 50px;
+    }
+
+    .actor-personaje {
+        text-align: center;
+    }
 </style>
 <body>
     <div class="titulo">
@@ -38,7 +51,7 @@
         <strong>Tom Holland, Tobey Maguire, y Andrew Garfield recreando el famoso meme del hombre araña</strong> que lleva siendo viral muchos meses, 
         donde ahora son tres los superhéroes los que se están señalando, como si no se conocieran, un momento que se pudo ver, de forma más sutil en la propia película.</p>
     </div>
-    <img src="./img/spiderman1.png">
+    <img src="./img/spiderman1.png" id="centro" width="420">
     <div class="cuerpo2">
         <p>El meme, que viene, cuya imagen proviene del episodio de <a href="https://en.wikipedia.org/wiki/Spider-Man_(1967_TV_series)">los dibujos animados de Spider-Man</a>
         de 1967, 'doble identidad', en el que un villano intenta hacerse pasar por el héroe,
@@ -47,8 +60,21 @@
         imitando algunos pasos prohibidos con su infame baile en '<a href="https://www.youtube.com/watch?v=e5wUilOeOmg">Spider-Man 3</a>'.
         </p>
     </div>
-    <img src="./img/spiderman2.png" width="391">
+    <img src="./img/spiderman2.png" width="420" id="centro">
     <p></p>
-    <img src="./img/spiderman3.png" width="391">
+    <img src="./img/spiderman3.png" width="420" id="centro">
+    <h2 style="text-align: center;">Actores</h2>
+    <div class="spiderman"> 
+        <img src="./img/tom_holland.jpg" width="175">
+        <img src="./img/spidey.jpg" width="175" style="padding-left: 68px">
+    </div>
+    <p></p>
+    <p class="actor-personaje"> Tom Holland — Spider-Man</p>
+    <div class="mj">
+        <img src="./img/zendaya.jpg" width="175">
+        <img src="./img/mj.jpg" width="175" style="padding-left: 68px">
+    </div>
+    <p></p>
+    <p class="actor-personaje"> Zendaya — Michelle Jones</p>
 </body>
 </html>
